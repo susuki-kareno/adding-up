@@ -46,7 +46,7 @@ rl.on('close', () =>
 	const rankingArray = Array.from(map);
 	rankingArray.sort((pair1, pair2) =>
 	{
-		return pair2[1].change - pair1[1].change;
+		return pair1[1].change - pair2[1].change;
 	});
 	
 	const rankingStrings = rankingArray.map((pair) =>
